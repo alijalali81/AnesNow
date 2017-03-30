@@ -24,6 +24,7 @@ end
 clear i
 
 kk=[88,127,158];
+m=kk;
 
 for i=1:213
     if ~ismember(i,kk)
@@ -40,6 +41,7 @@ for i=1:213
 end
 
 kk=[142,156];
+m=union(m,kk);
 
 for i=1:213
     if ~ismember(i,kk)
@@ -56,6 +58,7 @@ for i=1:213
 end
 
 kk=[7,42,62,65,84,88,108,114,125,129,161,162,197,213];
+m=union(m,kk);
 
 for i=1:213
     if ~ismember(i,kk)
@@ -79,3 +82,4 @@ cd('C:\Users\ajalali\OneDrive\CHOP-PostDoc-Research\Anesthesia Now\ANVitalSigns_
 save an_subject_b an_subject_b
 save an_subject_a an_subject_a
 save an_subject an_subject
+save m m
